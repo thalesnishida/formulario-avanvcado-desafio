@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  
+  background: #E5E5E5;
+  font-family: 'Poppins', sans-serif;
+  background: #E5E5E5;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 465px;
+  background: #293241;
+}
+
+.page {
+  width: 750px;
+  margin-bottom: 200px;
+}
+
+
+header h1 {
+  margin-top: 107px;
+  color: #FFFFFF;
+  font-family: 'Staatliches', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+}
+header p {
+  height: 46px;
+  color: #FFFFFF;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+header img {
+  margin-top: 2px;
+}
+
+header section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 133px;
+  margin-top: 25px;
+  background: #F67669;
+  border-radius: 20px 20px 0px 0px;
+}
+
+header section legend {
+  font-family: 'Staatliches', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+
+  color: #FFFFFF;
+}
+
+header form {
+  width: 100%;
+  padding: 31px 64px 64px 64px;
+  min-height: 200px;
+  background: #FFFFFF;
+  border-radius: 0px 0px 20px 20px;
+}
+
+header form fieldset {
+  text-align: center;
+  border: none;
+}
+
+header form fieldset .col-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+header form fieldset .col-2 .input-wrapper input {
+  width: 300px;
+}
+
+header form fieldset .input-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+header form fieldset .input-wrapper input {
+  height: 55px;
+  width: 100%;
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+header form fieldset .input-wrapper label,
+header form fieldset .checkbox-wrapper {
+  font-style: normal;
+  font-weight: 400; 
+  font-size: 14px;
+  color: #4E4958;
+  margin-bottom: 7px;
+}
+
+header form fieldset .input-wrapper span {
+  margin-left: 9px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #746F7D;
+}
+
+header form fieldset .input-wrapper span:hover {
+  color: #5e5966;
+}
+
+header form fieldset legend {
+  margin-bottom: 32px;
+  padding-bottom: 10px;
+
+  font-family: 'Staatliches', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+
+  border-bottom: 1px solid #E6E6F0;
+  color: #253B51;
+}
+
+header form fieldset select {
+  width: 300px;
+  height: 55px;
+  padding-left: 10px;
+  margin-bottom: 32px;
+
+  appearance: none;
+  -webkit-appearance: none;
+
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+}
+
+
+header form fieldset textarea {
+  width: 608px;
+  height: 167px;
+  padding: 5px;
+
+  resize: none;
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+}
+
+header form fieldset .checkbox-wrapper {
+  margin-top: 30px;
+  margin-bottom: 36px;
+  position: relative;
+}
+
+header form fieldset .checkbox-wrapper input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+}
+
+header form fieldset .checkbox-wrapper label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+header form fieldset .checkbox-wrapper label::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: block;
+
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+}
+
+
+header form fieldset .checkbox-wrapper input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.00016 16.1698L4.83016 11.9998L3.41016 13.4098L9.00016 18.9998L21.0002 6.99984L19.5902 5.58984L9.00016 16.1698Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+}
+
+header form fieldset .checkbox-wrapper input:focus + label::before {
+  border: 1px solid rgb(117, 195, 247);
+}
+
+header form fieldset .coluna-tres{
+  display: flex;
+  gap: 10px;
+}
+
+header form fieldset .coluna-tres > :nth-child(1){
+  width: 300px;
+  margin-right: 32px;
+}
+
+header form fieldset .coluna-tres > :nth-child(2),
+header form fieldset .coluna-tres > :nth-child(3){
+  width: 140px;
+}
+
+header form button {
+  width: 622px;
+  height: 51px;
+  margin-top: 63px;
+
+  border: 0;
+  cursor: pointer;
+  background: #F67669;
+  border-radius: 8px;
+}
+
+header form button:hover {
+  background: #e65343;
+}
